@@ -1,14 +1,25 @@
 
-fun main()
-{
-    var i:Int
-    val list = listOf("Allan", "Prado", 42, "Rio")
+fun main() {
+    var i: Int
+    val list = listOf("Allan", "Prado", "Rio")
+    var array = arrayOf("aprado", "o mais", "bonito")
+
     for (items in list)
-        println(items)
-    i = list.size
-    println(i)
-    println(list[0])
+        printar_lista(items)
+
+//    for (items in list)
+//        printar_lista(items)
+//    i = list.size
+//    while (i-- > 0) {
+//        println("-> valor do index $i ${list[i]}")
+//    }
 }
+
+fun printar_lista(string: String)
+{
+    println(string)
+}
+
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 //fun main() {

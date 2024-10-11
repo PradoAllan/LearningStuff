@@ -27,3 +27,11 @@
         var i: Int = 0 -> this is a good practice in some other languages
         in kotlin:
         var i = 0 -> the type inference knows that the 'i' variable is type Int
+
+5- When you define a variable, you can do that with 'var' or 'val'.
+But, there is a difference between them:
+    var -> Is used to declare a variable that its value can change during the execution.
+    val -> Is used to declare a value that will stay the same.
+    example:
+    var i = 0
+    val pi = 3,14

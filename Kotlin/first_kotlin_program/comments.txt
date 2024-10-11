@@ -4,7 +4,26 @@
 
 1- What happens when you run your Kotlin code?
 	The IDE compiles your source code into JVM Bytecode (JavaBytecode).
-	Assuming your code doesnt have any errors, comiling creates a new Class file
+	Assuming your code doesn't have any errors, compiling creates a new Class file
 	that can run in a JVM (Java Virtual Machine).
-	For exemple: If you compile the Main.kt code, the compiler will give to you a 
+	For example: If you compile the Main.kt code, the compiler will give to you a
 	MainKt.class
+
+2- The IDE starts the JVM and runs the MainKt.class
+    The JVM translates the .class bytecode into something the underlying platform
+    understand, the runs it.
+
+   3- I guess that, for some reason, the IDE doesn't like the declarations of
+   variables or functions using '_' to separate words. It has to be in camelCase.
+   ex:
+        Wrong way:
+            val array_strings = arrayOf("test", "test2")
+            fun show_strings (s: Array<String>){ }
+        Correct way:
+            val arrayStrings = arrayOf("test", "test2")
+            fun showStrings (s: Array<String>){ }
+
+4- This variable declarations is not good because of the type inference:
+        var i: Int = 0 -> this is a good practice in some other languages
+        in kotlin:
+        var i = 0 -> the type inference knows that the 'i' variable is type Int

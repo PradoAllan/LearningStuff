@@ -7,6 +7,8 @@ fun main(args: Array<String>) {
     val array = arrayOf("aprado", "o mais", "bonito")
     val arrayInt = arrayOf(1, 2, 3, 4, 5)
 
+    println("SHOWING THE PARAMETERS PASSED TO MAIN FUNC:")
+    showArrayStrings(args)
     println("Array of Strings: ")
     showArrayStrings(array)
     println("List of Any: ")
@@ -43,7 +45,14 @@ fun showArrayInt(array: Array<Int>)
     val len = array.size
     while (i < len)
     {
-        println(array[i])
+        //print("${array[i]} ")
+        println(if ((i % 2) == 0) "The number ${array[i]} is even" else "The number ${array[i]} is odd")
+        /*
+        if ((i % 2) == 0)
+            "The number ${array[i]} is even"
+        else
+            "The number ${array[i]} is odd"
+         */
         i++
     }
 }

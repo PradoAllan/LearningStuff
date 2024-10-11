@@ -1,0 +1,25 @@
+###########################
+#      Good insights      #
+###########################
+
+1- One of the most important things kotlin is that, once you declare a variable
+Kotlin can infer the variable's type from the value it's given.
+    Ex:
+        var x: Int = 5
+        var x = 5 -> You don't need to type the :Int after de variable name.
+
+    To create a variable, the compiler needs to know its name, type and
+    whether it can be reused.
+    The value is transformed into an object.
+    In the example above, the compiler knows that the value 5 is a Int number.
+    So, the code creates a new Int object with a value of 5.
+    The variable x holds a reference to the object.
+
+2- val VS var
+    If you declare the variable using 'val', the reference to the object
+    can not be replaced. So its value remains the same forever.
+    But if you declare it using 'var' you can assign another value to the
+    variable.
+
+3- Strings templates is used to create complex Strings with very little code.
+

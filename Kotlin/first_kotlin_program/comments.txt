@@ -35,3 +35,32 @@ But, there is a difference between them:
     example:
     var i = 0
     val pi = 3,14
+
+6- Difference between 'print()' and 'println()'
+    Basically, both of them show the output in the STD_OUT.
+    But, the main difference is that, print() just print in the fd 1
+    without the new line '\n'. And the println() do the same, but with
+    the new line '\n' in the end of the output.
+
+7- We can pass some parameters to the main func, called 'argv' by doing this:
+    -> click o the ... on the right top of the IDE, (the right side of the debug option)
+    -> Run with parameters
+    -> Than type the params you want to pass in the box: 'Program arguments'
+
+8- You can write if expressions, like that:
+    When you write if expressions you must include an else clause!
+    if expression:
+            println(if ((i % 2) == 0) "The number ${array[i]} is even" else "The number ${array[i]} is odd")
+    normal if condition:
+            if ((i % 2) == 0)
+                "The number ${array[i]} is even"
+            else
+                "The number ${array[i]} is odd"
+
+9- Kotlin REPL:
+    "Read Evaluate Print Loop"
+    Basically is a prompt that reads a kotlin code and execute it
+    You can test that in:
+    -> Tools
+    -> Kotlin
+    -> kotlin REPL (experimental)

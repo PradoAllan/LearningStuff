@@ -1,11 +1,18 @@
+//The main func arguments is the same as the argv in C.
+//I'm saying that we receive an Array of Strings named "args"
+//But, after kotlin 1.3, you no longer need to add the argv parameter. So, you can omit that
+fun main(args: Array<String>) {
+    /* var i: Int */
+    val list = listOf("Allan", "Prado", "Rio", 42)
+    val array = arrayOf("aprado", "o mais", "bonito")
+    val arrayInt = arrayOf(1, 2, 3, 4, 5)
 
-fun main() {
-    var i: Int
-    val list = listOf("Allan", "Prado", "Rio")
-    var array = arrayOf("aprado", "o mais", "bonito")
-
-    for (items in list)
-        printar_lista(items)
+    println("Array of Strings: ")
+    showArrayStrings(array)
+    println("List of Any: ")
+    showList(list)
+    println("Array of Int: ")
+    showArrayInt(arrayInt)
 
 //    for (items in list)
 //        printar_lista(items)
@@ -15,9 +22,30 @@ fun main() {
 //    }
 }
 
-fun printar_lista(string: String)
+fun showList(s: List<Any>)
 {
-    println(string)
+    for (items in s)
+        println(items)
+}
+
+fun showArrayStrings(s: Array<String>)
+{
+//    for (items in s)
+//        print(items+'\n')
+    for (items in s)
+        println(items)
+}
+
+fun showArrayInt(array: Array<Int>)
+{
+    //var i: Int = 0 Not a good way because of the type inference
+    var i = 0
+    val len = array.size
+    while (i < len)
+    {
+        println(array[i])
+        i++
+    }
 }
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or

@@ -1,0 +1,10 @@
+######################################
+#         Important comments         #
+######################################
+
+1- What happens when you run your Kotlin code?
+	The IDE compiles your source code into JVM Bytecode (JavaBytecode).
+	Assuming your code doesnt have any errors, comiling creates a new Class file
+	that can run in a JVM (Java Virtual Machine).
+	For exemple: If you compile the Main.kt code, the compiler will give to you a 
+	MainKt.class

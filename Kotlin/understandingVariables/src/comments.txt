@@ -11,9 +11,21 @@ Kotlin can infer the variable's type from the value it's given.
     To create a variable, the compiler needs to know its name, type and
     whether it can be reused.
     The value is transformed into an object.
-    In the example above, the compiler knows that the value 5 is a Int number.
+    In the example above, the compiler knows that the value 5 is an Int number.
     So, the code creates a new Int object with a value of 5.
     The variable x holds a reference to the object.
+
+    OBS-> In Kotlin, a variable of any type, ONLY holds the reference for that object. They are not
+    primitive.
+        ex:
+            var x = 5 -> This creates a variable Int that holds the reference to an Int Object
+            with a value of 5.
+            So, 'x' holds a reference to that object.
+            var y = x -> This means that 'x' and 'y' Holds a reference to the same object.
+
+            var lonng: Long
+            lonng = test.toLong()
+            "Kotlin creates a new Long object that has the same value as the test variable"
 
 2- val VS var
     If you declare the variable using 'val', the reference to the object
@@ -21,5 +33,38 @@ Kotlin can infer the variable's type from the value it's given.
     But if you declare it using 'var' you can assign another value to the
     variable.
 
-3- Strings templates is used to create complex Strings with very little code.
+3- Primitive Arrays VS Non primitives arrays
+    The difference seems to be in the efficiency part. Need to check that after. But, for now,
+    I don't need to know the real difference. Guess in the future.
+
+    val primitiveArray = intArrayOf(42, 24, 2000, 2024) -> It looks like a normal array in C
+        So, an Array of int can only store Integer data.
+
+    val nonPrimitiveArray = arrayOf(42, 24, "2000", "aprado") -> It looks more like a list of elements
+        So, an Array of <Any> can store any type of data. As I said, looks like a linked list in C.
+
+4- Kotlin has the 4 basic Integer types
+    Byte -> 8 bits -> -128 127
+    Short -> 16 bits -> -32768 32767
+    Int -> 32 bits -> Same value as C
+    Long -> 64 bits -> -huge to (huge - 1)
+
+5- Kotlin has 2 floating points types
+    Float -> 32 bits
+    Double -> 64 bits
+
+6- Kotlin has Boolean type
+    So, it can be true or false (1 or 0)
+
+7- Kotlin has Char and String types
+    Char is declared
+        var letter = 'A'
+    "In Kotlin, you can't assign to a char variable it's ASCII value. Because, Char can only support
+    Letters"
+    String is declares
+        var name = "Allan"
+    "The Kotlin String is equal to C Strings. So, they both are Char Sequence (an Array of char)"
+
+
+- Strings templates is used to create complex Strings with very little code.
 

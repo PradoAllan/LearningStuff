@@ -67,4 +67,25 @@ fun main()
         //println(userInput)
         //println(getComputersChoice(choices))
     }
+//
+//    var name: String
+//    name = "Allan"
+//    changeName(name)
+//    println(name)
+//
+//    val names = arrayOf("allan", "prado")
+//    changeNames(names)
+//    for (s in names)
+//        println(s)
+}
+
+fun changeNames(names: Array<String>)
+{
+    names[1] = "ALLAN"
+}
+
+fun changeName(name: String)
+{
+    var newName = name
+    newName = "Prado"
 }

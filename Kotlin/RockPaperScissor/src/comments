@@ -1,0 +1,21 @@
+#####################
+#   Good Insights   #
+#####################
+
+1- In Kotlin, when we declare a new Function(), if the function doesn't returns anything,
+you can explicit it with the ": Unit" type. This works like "Void" in C.
+    ex:
+        fun add(n1: Int, n2: Int): Unit
+        {
+            println("add: ${n1 + n2}")
+        }
+        OR
+        fun greet(): Unit
+        {
+            println("Hello world!")
+        }
+
+    OBS-> It is totally optional. So, it means that you don't need to declare it.
+
+2- In Kotlin, as in C, when you pass a argument as parameter to a function(), you pass a reference
+to that object. So, you can change the value in the memory.

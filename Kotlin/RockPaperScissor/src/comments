@@ -19,3 +19,22 @@ you can explicit it with the ": Unit" type. This works like "Void" in C.
 
 2- In Kotlin, as in C, when you pass a argument as parameter to a function(), you pass a reference
 to that object. So, you can change the value in the memory.
+
+3- In Kotlin, you can do a loop decrementing using 'downTo' instead os '..' or 'until'.
+ex:
+    for (x in 15 downTo 1)
+    {
+        println(x);
+    }
+
+4- You can also skip numbers in the range. Using the same operators 'downTo, until ...'
+ex:
+    for (x in 1..100 step 2)
+    {
+        println(x) //this is going to print only the odd numbers in the range of 1 to 100
+    }
+
+5- ReadLine() function is similar to the ReadLine() in C: It reads a line of input from the STD_IN.
+In a success case, returns a String with the user input. Returns null if fails.
+
+6- The comparison operators "|| && == != !" is equal in C.

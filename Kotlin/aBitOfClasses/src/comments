@@ -1,0 +1,18 @@
+#################
+# Good insights #
+#################
+
+1- Kotlin Class: "Classes are templates that allow you to create your own types of objects, and
+define their properties and functions/methods".
+ex:
+    when you type:
+        var x = 42
+        "You are telling the compiler that you are creating a new object of Int type. And the x
+        variable are saving a reference to that Int object."
+        "So, as you just created a new Int object, you can use all the Int class methods. toString()
+        and others..."
+
+2- As a normal variable, when you create a Class and one of its attributes is "val", you cannot
+change the value once you already define it.
+ex:
+    Class

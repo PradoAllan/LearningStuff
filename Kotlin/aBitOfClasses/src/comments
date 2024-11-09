@@ -15,4 +15,55 @@ ex:
 2- As a normal variable, when you create a Class and one of its attributes is "val", you cannot
 change the value once you already define it.
 ex:
-    Class
+    Class Name (attributes) { methods }
+
+3- So, the classes that you create, behave like any other Class. When you declare
+    val person1 = Person(...) -> this is the constructor
+        -> the variable 'person1' now holds a reference to the object created before.
+    You can use its methods and attributes like this:
+    person.name
+    person.comer()
+    ...
+
+4- The constructor is used do instantiate a new object. The new attributes is created like a normal
+variable.
+    ex: "The process is like this:
+            1- all the attributes get created by the compiler.
+            2- the object's attributes holds the reference of these objects.
+            3- then, the new class object holds the new reference for that instance.
+
+5- Initializer func:
+    init {
+        ...
+    }
+    -> "This is a function called after the constructor was called. So, this init function is not
+    an constructor..."
+    -> "You can have countless init functions it in the classes. They get called in declaration
+    order..."
+
+6- As in the functions, you MUST initialize every property/attribute in a class.
+    -> If you don't do that, the compiler will complain.
+    You can initialize with an empty string "" or with null, for example.
+
+    -> IF YOU ARE SURE THAT YOU DON'T WANT/NEED TO INITIALIZE A VARIABLE IN A CLASS OR FUNCTION,
+    YOU CAN ADD THE PREFIX 'lateinit' IN IT.
+        lateinit var name: String
+
+        "You can only call a variable with lateinit prefix for non primitive type and
+        for 'var'..."
+
+7- Empty constructors:
+
+    class Duck {
+        fun quack()
+        {
+            println("Quack Quack!")
+        }
+    }
+    -> "This Duck class has a default constructor Duck() with no parameters..."
+
+8- Getters and Setters:
+    -> Basically, the Getters is used to GET a attribute value. And the Setters is to SET
+    a attribute's value.
+    -> They are important methods in a class because they keep the class's attributes as private.
+    In another words, it keeps everything more safer.
